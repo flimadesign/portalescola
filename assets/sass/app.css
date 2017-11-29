@@ -5078,31 +5078,66 @@ table {
   border-radius: 10px;
   border: 1px solid #bec2c7;
   border-collapse: initial !important;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px !important; }
 
 th {
   background-color: #bec2c7;
   color: #000;
   border-bottom: 0 !important;
   padding: 10px;
-  font-size: 17px;
-  font-weight: 600; }
+  font-size: 16px;
+  font-weight: 600;
+  border-left: 1px solid #9b9fa5;
+  text-align: center; }
 
 th:first-child {
   -webkit-border-radius: 7px 0 0 0;
   -moz-border-radius: 7px 0 0 0;
-  border-radius: 7px 0 0 0; }
+  border-radius: 7px 0 0 0;
+  border: 0; }
 
 th:last-child {
   -webkit-border-radius: 0 7px 0 0;
   -moz-border-radius: 0 7px 0 0;
   border-radius: 0 7px 0 0; }
 
+.subtitulo-tabela {
+  background-color: #e3e5e6;
+  border-left: 1px solid #bec2c7;
+  padding: 3px 12px !important; }
+
+td {
+  border-bottom: 1px solid #d2d6da;
+  border-left: 1px solid #d2d6da;
+  font-weight: 600; }
+
+td:first-child {
+  border-left: 0 !important; }
+
+/*tr:first-child td{
+	border-left: 1px solid #000 !important;
+	font-weight: 600;
+}*/
+tr:last-child td {
+  border-bottom: 0 !important; }
+
 tr:first-child td {
   border-top: 0 !important; }
 
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
-  padding: 12px !important; }
+  padding: 12px; }
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  border-top: 0 !important; }
+
+.aprovado {
+  width: 100px;
+  background-color: #dfffec; }
+
+.reprovado {
+  width: 100px;
+  background-color: #ffe8e1; }
 
 .navbar-nav > li > a {
   color: #ffffff;
@@ -5149,7 +5184,8 @@ tr:first-child td {
 
 .scroll {
   overflow-x: auto;
-  max-height: 700px; }
+  max-height: 700px;
+  margin-bottom: 10px; }
 
 .top-bar {
   border-radius: 10px;
@@ -5209,10 +5245,27 @@ button:focus {
   text-transform: uppercase;
   border: transparent;
   padding-right: 20px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  display: flex; }
 
 .navbar-toggle {
   color: #fff !important;
-  border: 1px solid #fff !important; }
+  border: 1px solid #fff !important;
+  padding-top: 8px; }
+
+.ti {
+  font-size: 17px !important;
+  line-height: 0; }
+
+.bottom-button {
+  justify-content: flex-end;
+  display: flex; }
+
+.dropdown-menu > li > a {
+  color: #ffffff; }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #0a4678;
+  color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
